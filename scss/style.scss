@@ -1,0 +1,131 @@
+@use "reset" as *;
+@use "variables" as *;
+@use "mixin" as *;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: $Very-Light-Gray;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 8rem 4rem 5.5rem;
+  h1 {
+    max-width: 375px;
+    font-size: clamp(2.3rem, 1.5174rem + 2.087vw, 3.5rem);
+    font-weight: 300;
+    line-height: 3.5rem;
+    span {
+      color: $Very-Dark-Blue;
+      font-weight: 700;
+    }
+  }
+  .info {
+    width: min(100%, 50rem);
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+p {
+  color: $Grayish-Blue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  @include section;
+  @include image;
+  h2 {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.6rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+  }
+  .about {
+    position: absolute;
+    top: 5.5rem;
+    left: 2.6rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+}
+
+.supervisor {
+  background-image: url("../images/icon-supervisor.svg");
+}
+
+.team-builder {
+  background-image: url("../images/icon-team-builder.svg");
+  border-color: $Red;
+}
+
+.karma {
+  background-image: url("../images/icon-karma.svg");
+  border-color: $Orange;
+}
+
+.calculator {
+  background-image: url("../images/icon-calculator.svg");
+  border-color: $Blue;
+}
+
+footer {
+  padding-top: 5rem;
+  .attribution {
+    color: $Very-Dark-Blue;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: $Blue;
+  }
+}
+
+@media all and (min-width: 950px) {
+  body {
+    max-height: 100vh;
+  }
+  header {
+    max-width: 1440px;
+    h1 {
+      max-width: 465px;
+      line-height: 4.8rem;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section {
+    width: 34rem;
+    height: 24rem;
+    background-size: 6rem;
+    background-position: (25.5rem 15rem);
+  }
+  .midlle-sections {
+    margin: 0 2.5rem;
+  }
+}

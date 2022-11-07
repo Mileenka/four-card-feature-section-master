@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 8rem 4rem 5.5rem;
+}
+header h1 {
+  max-width: 375px;
+  font-size: clamp(2.3rem, 1.5174rem + 2.087vw, 3.5rem);
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+header h1 span {
+  color: hsl(234deg, 12%, 34%);
+  font-weight: 700;
+}
+header .info {
+  width: min(100%, 50rem);
+  margin-top: 1.5rem;
+  line-height: 2.5rem;
+}
+
+p {
+  color: hsl(229deg, 6%, 66%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  width: 30rem;
+  height: 22rem;
+  margin-top: 2.5rem;
+  background-color: white;
+  box-shadow: 1rem 1.8rem 2rem rgba(164, 174, 197, 0.324);
+  border-top: 4px solid hsl(180deg, 62%, 55%);
+  border-radius: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: 5.5rem;
+  background-position: 21.8rem 13.5rem;
+}
+section h2 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.6rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: hsl(234deg, 12%, 34%);
+}
+section .about {
+  position: absolute;
+  top: 5.5rem;
+  left: 2.6rem;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.supervisor {
+  background-image: url("../images/icon-supervisor.svg");
+}
+
+.team-builder {
+  background-image: url("../images/icon-team-builder.svg");
+  border-color: hsl(0deg, 78%, 62%);
+}
+
+.karma {
+  background-image: url("../images/icon-karma.svg");
+  border-color: hsl(34deg, 97%, 64%);
+}
+
+.calculator {
+  background-image: url("../images/icon-calculator.svg");
+  border-color: hsl(212deg, 86%, 64%);
+}
+
+footer {
+  padding-top: 5rem;
+}
+footer .attribution {
+  color: hsl(234deg, 12%, 34%);
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(212deg, 86%, 64%);
+}
+
+@media all and (min-width: 950px) {
+  body {
+    max-height: 100vh;
+  }
+  header {
+    max-width: 1440px;
+  }
+  header h1 {
+    max-width: 465px;
+    line-height: 4.8rem;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section {
+    width: 34rem;
+    height: 24rem;
+    background-size: 6rem;
+    background-position: 25.5rem 15rem;
+  }
+  .midlle-sections {
+    margin: 0 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
